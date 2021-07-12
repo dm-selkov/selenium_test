@@ -14,7 +14,7 @@ def testing():
     driver.quit()
 
 
-def test_show_my_pets(testing):
+def test_show_all_pets_correct(testing):
     testing.find_element_by_id('email').send_keys(valid_email)
     testing.find_element_by_id('pass').send_keys(valid_password)
     testing.find_element_by_css_selector('button[type="submit"]').click()
